@@ -14,7 +14,7 @@ class LoginViewController: UIViewController {
     private let loginLabel = UILabel()
     private let loginTextField = UITextField()
     private let passwordTextField = UITextField()
-    private let loginButton = UIButton()
+    private let loginButton = PrimaryButton()
     private let forgotPasswordButton = UIButton()
     private let togglePasswordVisibilityButton = UIButton(type: .custom)
     

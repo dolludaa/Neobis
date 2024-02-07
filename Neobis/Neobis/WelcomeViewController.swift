@@ -12,8 +12,8 @@ class WelcomeViewController: UIViewController {
     
     private let welcomeLabel = UILabel()
     private let globeImageView = UIImageView()
-    private let studentButton = UIButton()
-    private let teacherButton = UIButton()
+    private let studentButton = PrimaryButton()
+    private let teacherButton = SecondaryButton()
     
     override func viewDidLoad() {
         super.viewDidLoad()

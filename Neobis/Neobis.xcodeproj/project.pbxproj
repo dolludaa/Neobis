@@ -22,6 +22,8 @@
 		44B2A06F2B742B2600A0E1CD /* PasswordRecoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B2A06E2B742B2600A0E1CD /* PasswordRecoveryViewController.swift */; };
 		44B2A0722B742F0400A0E1CD /* PasswordResetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B2A0712B742F0400A0E1CD /* PasswordResetService.swift */; };
 		44B2A0752B74373100A0E1CD /* PasswordResetRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B2A0742B74373100A0E1CD /* PasswordResetRequest.swift */; };
+		44B2A07A2B74403D00A0E1CD /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B2A0792B74403D00A0E1CD /* PrimaryButton.swift */; };
+		44B2A07C2B74405300A0E1CD /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B2A07B2B74405300A0E1CD /* SecondaryButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		44B2A06E2B742B2600A0E1CD /* PasswordRecoveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordRecoveryViewController.swift; sourceTree = "<group>"; };
 		44B2A0712B742F0400A0E1CD /* PasswordResetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResetService.swift; sourceTree = "<group>"; };
 		44B2A0742B74373100A0E1CD /* PasswordResetRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResetRequest.swift; sourceTree = "<group>"; };
+		44B2A0792B74403D00A0E1CD /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		44B2A07B2B74405300A0E1CD /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,7 @@
 		446857972B72E37200D439BE /* Neobis */ = {
 			isa = PBXGroup;
 			children = (
+				44B2A0782B74401900A0E1CD /* Reusable components */,
 				44B2A0732B74370F00A0E1CD /* Models */,
 				44B2A0702B742EF400A0E1CD /* Service Flow */,
 				44B2A0662B73051A00A0E1CD /* Entities */,
@@ -121,6 +126,15 @@
 				44B2A0742B74373100A0E1CD /* PasswordResetRequest.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		44B2A0782B74401900A0E1CD /* Reusable components */ = {
+			isa = PBXGroup;
+			children = (
+				44B2A0792B74403D00A0E1CD /* PrimaryButton.swift */,
+				44B2A07B2B74405300A0E1CD /* SecondaryButton.swift */,
+			);
+			path = "Reusable components";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,7 +216,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44B2A07C2B74405300A0E1CD /* SecondaryButton.swift in Sources */,
 				44B2A06F2B742B2600A0E1CD /* PasswordRecoveryViewController.swift in Sources */,
+				44B2A07A2B74403D00A0E1CD /* PrimaryButton.swift in Sources */,
 				44B2A0682B73054B00A0E1CD /* LoginViewController.swift in Sources */,
 				4468579D2B72E37200D439BE /* WelcomeViewController.swift in Sources */,
 				44B2A06A2B7309C200A0E1CD /* UITextField.swift in Sources */,

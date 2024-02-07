@@ -12,7 +12,7 @@ class PasswordRecoveryViewController: UIViewController, UITextFieldDelegate {
     private let recoveryLabel = UILabel()
     private let descriptionLabel = UILabel()
     private let emailTextField = UITextField()
-    private let nextButton = UIButton()
+    private let nextButton = PrimaryButton()
     
     private let passwordResetService = PasswordResetService()
 
@@ -55,7 +55,6 @@ class PasswordRecoveryViewController: UIViewController, UITextFieldDelegate {
         nextButton.backgroundColor = UIColor.systemPurple.withAlphaComponent(0.5)
         nextButton.setTitle("Далее", for: .normal)
         nextButton.layer.cornerRadius = 16
-//        nextButton.isEnabled = false
         nextButton.addTarget(self, action: #selector(nextButtonTapped), for: .touchUpInside)
     }
     

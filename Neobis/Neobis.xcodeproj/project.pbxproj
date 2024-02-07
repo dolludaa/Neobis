@@ -13,6 +13,10 @@
 		446857A02B72E37200D439BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4468579E2B72E37200D439BE /* Main.storyboard */; };
 		446857A22B72E37400D439BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 446857A12B72E37400D439BE /* Assets.xcassets */; };
 		446857AD2B72E71E00D439BE /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 446857AC2B72E71E00D439BE /* Launch Screen.storyboard */; };
+		446857B02B72F98800D439BE /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 446857AF2B72F98800D439BE /* SnapKit */; };
+		446857B22B72F98800D439BE /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 446857B12B72F98800D439BE /* SnapKit-Dynamic */; };
+		44B2A0622B73034800A0E1CD /* AppColorEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B2A0612B73034800A0E1CD /* AppColorEnum.swift */; };
+		44B2A0652B7303EE00A0E1CD /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B2A0642B7303EE00A0E1CD /* UIColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,8 @@
 		446857A12B72E37400D439BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		446857A62B72E37400D439BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		446857AC2B72E71E00D439BE /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		44B2A0612B73034800A0E1CD /* AppColorEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColorEnum.swift; sourceTree = "<group>"; };
+		44B2A0642B7303EE00A0E1CD /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				446857B02B72F98800D439BE /* SnapKit in Frameworks */,
+				446857B22B72F98800D439BE /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +64,7 @@
 		446857972B72E37200D439BE /* Neobis */ = {
 			isa = PBXGroup;
 			children = (
+				44B2A0632B7303DF00A0E1CD /* Extensions */,
 				446857982B72E37200D439BE /* AppDelegate.swift */,
 				4468579A2B72E37200D439BE /* SceneDelegate.swift */,
 				4468579C2B72E37200D439BE /* ViewController.swift */,
@@ -63,8 +72,17 @@
 				446857A12B72E37400D439BE /* Assets.xcassets */,
 				446857A62B72E37400D439BE /* Info.plist */,
 				446857AC2B72E71E00D439BE /* Launch Screen.storyboard */,
+				44B2A0612B73034800A0E1CD /* AppColorEnum.swift */,
 			);
 			path = Neobis;
+			sourceTree = "<group>";
+		};
+		44B2A0632B7303DF00A0E1CD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				44B2A0642B7303EE00A0E1CD /* UIColor.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +101,10 @@
 			dependencies = (
 			);
 			name = Neobis;
+			packageProductDependencies = (
+				446857AF2B72F98800D439BE /* SnapKit */,
+				446857B12B72F98800D439BE /* SnapKit-Dynamic */,
+			);
 			productName = Neobis;
 			productReference = 446857952B72E37200D439BE /* Neobis.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +133,9 @@
 				Base,
 			);
 			mainGroup = 4468578C2B72E37200D439BE;
+			packageReferences = (
+				446857AE2B72F98800D439BE /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 446857962B72E37200D439BE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -140,7 +165,9 @@
 			files = (
 				4468579D2B72E37200D439BE /* ViewController.swift in Sources */,
 				446857992B72E37200D439BE /* AppDelegate.swift in Sources */,
+				44B2A0622B73034800A0E1CD /* AppColorEnum.swift in Sources */,
 				4468579B2B72E37200D439BE /* SceneDelegate.swift in Sources */,
+				44B2A0652B7303EE00A0E1CD /* UIColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +382,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		446857AE2B72F98800D439BE /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		446857AF2B72F98800D439BE /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 446857AE2B72F98800D439BE /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		446857B12B72F98800D439BE /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 446857AE2B72F98800D439BE /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4468578D2B72E37200D439BE /* Project object */;
 }
